@@ -21,11 +21,10 @@
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"description": "demo for Kerry",
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "https://adb-7229956500794340.0.azuredatabricks.net",
+					"domain": "https://adb-3694763767231628.8.azuredatabricks.net",
 					"accessToken": {
 						"type": "SecureString",
 						"value": "[parameters('AzureDatabricks_LinkedService_accessToken')]"
@@ -35,7 +34,7 @@
 					"newClusterSparkEnvVars": {
 						"PYSPARK_PYTHON": "/databricks/python3/bin/python3"
 					},
-					"newClusterVersion": "apache-spark-2.4.x-scala2.11"
+					"newClusterVersion": "5.5.x-scala2.11"
 				}
 			},
 			"dependsOn": []
